@@ -1,13 +1,10 @@
 import React from 'react';
-import ReactDom from 'react-dom';
+// import ReactDom from 'react-dom';
+
 import App from './App';
-import Developer from './Class';
+import ReactDOM from "react-dom";
 
-ReactDom.render(
-<App />,
-    // указываем куда будет вставляться React приложение на странице
-    document.querySelector('#web-page')
-);
+// чисто для финальной сборки)
 
-let dich = new Developer('Вячеслав');
-dich.sayHi();
+ReactDOM.render(<App/>, document.querySelector('#root'));
+
